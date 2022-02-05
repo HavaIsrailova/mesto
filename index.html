@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./pages/index.css" />
+	<title>Mesto</title>
+</head>
+<body class="body">
+	<div class="page">
+		<header class="header">
+			<img class="header__logo" src="./images/svg/logo-header.svg" alt="Логотип">
+		</header>
+        <main>
+			<section class="profile">
+				<div class="profile__info">
+					<img class="profile__user-avatar" src="./images/avatar-kusto.jpg" alt="Фото юзера">
+					<div>
+						<div class="profile__bio-edit">
+							<h1 class="profile__name">Жак-Ив Кусто</h1>
+							<button type="button" class="profile__edit"><img src="./images/svg/Edit-Button.svg"
+									alt="Редактировать"></button>
+						</div>
+						<p class="profile__description">Исследователь океана</p>
+					</div>
+				</div>
+				<button type="button" class="profile__add-button"></button>
+	
+			</section>
+			<section class="elements">
+				<div class="element">
+					<img class="element__img" src="./images/grozny.jpg" alt="Грозный Чеченская республика">
+					<div class="element__info">
+						<p class="element__title">Грозный</p>
+						<button type="button" class="element__like"></button>
+					</div>
+				</div>
+
+				<div class="element">
+					<img class="element__img" src="./images/magas.jpg" alt="Магас Ингушетия">
+					<div class="element__info">
+						<p class="element__title">Магас Ингушетия</p>
+						<button type="button" class="element__like"></button>
+					</div>
+				</div>
+				<div class="element">
+					<img class="element__img" src="./images/krasnodarr.jpg" alt="Краснодар">
+					<div class="element__info">
+						<p class="element__title">Краснодар</p>
+						<button type="button" class="element__like"></button>
+					</div>
+				</div>
+				<div class="element">
+					<img class="element__img" src="./images/moscow.jpg" alt="Москва">
+					<div class="element__info">
+						<p class="element__title">Москва</p>
+						<button type="button" class="element__like"></button>
+					</div>
+				</div>
+				<div class="element">
+					<img class="element__img" src="./images/baku.jpg" alt="Баку Айзербаджан">
+					<div class="element__info">
+						<p class="element__title">Баку</p>
+						<button type="button" class="element__like"></button>
+					</div>
+				</div>
+				<div class="element">
+					<img class="element__img" src="./images/erevan.jpg" alt="Ереван Армения">
+					<div class="element__info">
+						<p class="element__title">Ереван</p>
+						<button type="button" class="element__like"></button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<p class=>&#169; 2020 Mesto Russia</p>
+		</footer>
+		<div class="popup">
+			<div class="popup__body">
+
+			<button type="button" class="popup__close-popup"></button>
+	<form name="edit-form">
+			<p class="popup__title">Редактировать профиль</p>
+	<input type="text" name="user" 
+	placeholder="Имя Фамилия" 
+	class="popup__field">
+	<input type="text" name="about" placeholder="О себе"
+						class="popup__field">
+					<button type="submit" class="popup__button-save">Сохранить</button>
+	</form>
+			</div>
+		</div>
+	</div> 
+	<script src="./javascript/index.js"></script>
+</body>
+
+</html>
