@@ -1,7 +1,7 @@
 //БЛОКИ объявления РЕДАКТИРОВАНИЯ
 const popupChange = document.querySelector(".popup_login");
 const profileChange = document.querySelector(".profile__editor");
-const closePopupButton = document.querySelectorAll(".popup__close-popup");
+const closePopupButtons = document.querySelectorAll(".popup__close-popup");
 const inputUserProfile = document.querySelector('[name="user"]');
 const inputAboutProfile = document.querySelector('[name="about"]');
 const profileName = document.querySelector(".profile__name");
@@ -31,7 +31,7 @@ function closePopup(popup) {
 }
 //использую форич для всех кнопок
 // кнопки закрытия попапа
-closePopupButton.forEach((button) => {
+closePopupButtons.forEach((button) => {
   const popup = button.closest(".popup");
   button.addEventListener("click", () => closePopup(popup));
 });
