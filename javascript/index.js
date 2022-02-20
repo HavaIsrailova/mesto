@@ -89,11 +89,11 @@ function addPhotoPrepend(card) {
 // передача названий и ссылок из формы карточкам
 function saveAddPicture(e) {
   e.preventDefault();
-  const cardInfo = {
+  const photoInfo = {
     name: popupPhotoName.value,
     link: popupPhotoLink.value,
   };
-  addPhotoPrepend(cardInfo);
+  addPhotoPrepend(photoInfo);
   closePopup(popupAddPh);
   popupFormPhoto.reset();
 }
