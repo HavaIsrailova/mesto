@@ -117,7 +117,7 @@ butttonAddPhoto.addEventListener('click', function () {
 })
 
 // функция создания фоток
-function addCard(dataImage) {
+function newCard(dataImage) {
   const cardContent = template.content.cloneNode(true);
   const cardElement = cardContent.querySelector('.element');
   const createImage = cardElement.querySelector('.element__image');
@@ -131,11 +131,11 @@ function addCard(dataImage) {
 
 // фото добавляются в начало и конец
 function addCardPrepend(card) {
-  cards.prepend(addCard(card))
+  cards.prepend(newCard(card))
 }
 
 function addCardAppend(card) {
-  cards.append(addCard(card))
+  cards.append(newCard(card))
 }
 
 // передача названий и ссылок из формы карточкам, также Б кнопки AddPh
