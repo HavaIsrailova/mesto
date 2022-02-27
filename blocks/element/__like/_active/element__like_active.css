@@ -1,0 +1,7 @@
+.element__like_active {
+  transition: 0.3s ease;
+  background-image: url(../../../../images/svg/Like_active.svg);
+  opacity: 1;
+  cursor: pointer;
+}
+
