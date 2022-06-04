@@ -35,13 +35,24 @@
           <button type="button" class="profile__add-button"></button>
         </section>
 
-        <section class="elements"></section>
+        <section class="elements">
+          <template class="template__element">
+            <div class="element">
+              <div class="element__delete"></div>
+              <img class="element__image" />
+              <div class="element__info">
+                <h2 class="element__title">Карачаевск</h2>
+                <button type="button" class="element__like"></button>
+              </div>
+            </div>
+          </template>
+        </section>
       </main>
 
       <footer class="footer">
-        <p class="footer">&#169; 2022 Mesto Russia</p>
+        <p class="footer__copyright">&#169; 2020 Mesto Russia</p>
       </footer>
-<!--добавляем айди спан и лейбл к инпуту-->
+<!--ПОПАПЫ-->
       <div class="popup popup_login">
         <div class="popup__body">
           <button type="button" class="popup__close-popup"></button>
@@ -52,10 +63,10 @@
                 type="text"
                 name="user"
                 placeholder="Имя"
+                id="name-input"
                 class="popup__field"
                 minlength="2"
                 maxlength="40"
-                id="name-input"
                 required
               />
               <span class="popup__input-error name-input-error"></span>
@@ -65,10 +76,10 @@
                 type="text"
                 name="about"
                 placeholder="Профессия"
+                id="profession-input"
                 class="popup__field"
                 minlength="2"
                 maxlength="200"
-                id="profession-input"
                 required
               />
               <span class="popup__input-error profession-input-error"></span>
@@ -88,10 +99,10 @@
                 type="text"
                 name="name"
                 placeholder="Название"
+                id="place-input"
                 class="popup__field popup__name-photo"
                 minlength="2"
                 maxlength="30"
-                id="place-input"
                 required
               />
               <span class="popup__input-error place-input-error"></span>
@@ -101,8 +112,8 @@
                 type="url"
                 name="link"
                 placeholder="Ссылка на картинку"
-                class="popup__field popup__link-photo"
                 id="link-input"
+                class="popup__field popup__link-photo"
                 required
               />
               <span class="popup__input-error link-input-error"></span>
@@ -111,29 +122,19 @@
           </form>
         </div>
       </div>
-      
+
       <div class="popup popup_picture-viewport">
-        <div class="popup__image-container">
-          <img class="popup__picture"  
-          src="https://www.meme-arsenal.com/memes/efcb7b0e4546d5d857ddc73e4646aad5.jpg"
-          alt="JavaScript что ты такое" />
-          <h2 class="popup__picture-title"></h2>
+        <div class="popup__picture-container">
+          <img
+            class="popup__picture"
+            src="https://www.meme-arsenal.com/memes/efcb7b0e4546d5d857ddc73e4646aad5.jpg"
+            alt="JavaScript что ты такое"
+          />
+          <h2 class="popup__picture-title">Alex</h2>
           <button type="button" class="popup__close-popup"></button>
         </div>
       </div>
-
-      <template class="template__element">
-        <div class="element">
-          <div class="element__delete"></div>
-          <img class="element__image"/>
-          <div class="element__info">
-            <h2 class="element__title"></h2>
-            <button type="button" class="element__like"></button>
-          </div>
-        </div>
-      </template>
     </div>
-    <script src="./javascript/validate.js"></script>
-    <script src="./javascript/index.js"></script>
+    <script type="module" src="./javascript/index.js"></script>
   </body>
 </html>
