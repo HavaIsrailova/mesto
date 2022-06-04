@@ -1,0 +1,27 @@
+.profile__editor {
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../../images/svg/Edit-Button.svg);
+  background-size: cover;
+  object-fit: cover;
+  padding: 0px;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+.profile__editor:hover {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .profile__editor {
+    width: 18px;
+    height: 18px;
+  }
+}
