@@ -103,10 +103,6 @@ function initCard(dataCard) {
 
 cardList.renderItems()
 
-butttonAddPhoto.addEventListener('click', function () {
-	popupAddCard.open();
-})
-
 function saveAddCard(data) {
 	addCard(data);
 	popupAddCard.close();
