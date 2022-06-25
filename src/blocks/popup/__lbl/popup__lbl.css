@@ -1,0 +1,8 @@
+.popup__lbl {
+  position: relative;
+  display: block;
+}
+/*делаю больше боттом так как съедает текст*/
+.popup__lbl:first-of-type {
+  margin-bottom: 35px;
+}
